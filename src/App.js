@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import Item from "./components/item/index"
+import Card from "./components/card/index"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const App = () => {
+  return(
+    <>
+      <h1>Hello world com React</h1>
+      <p>Eu sou um paragrafo = )</p>
+      <ul>
+          <Item>
+            Item 1
+          </Item>
+          <Item>
+            Item 2
+          </Item>
+          <Item>
+            Item 3
+          </Item>
+      </ul>
+      <Card></Card>
+    </>
+  )
 }
 
 export default App;
